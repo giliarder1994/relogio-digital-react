@@ -1,0 +1,60 @@
+.box {
+  margin: 5px;
+  position: relative;
+}
+
+.value {
+  width: 100px;
+  height: 80px;
+  background: slateblue;
+  opacity: 0.8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.label {
+  height: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: darkblue;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .box {
+    margin: 3px;
+  }
+
+  .value {
+    width: 80px;
+    height: 60px;
+    font-size: 40px;
+  }
+
+  .label {
+    height: 25px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .value {
+    width: 65px;
+    height: 50px;
+    font-size: 30px;
+  }
+
+  .label {
+    height: 20px;
+    font-size: 7px;
+  }
+}
